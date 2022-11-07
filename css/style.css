@@ -7,6 +7,7 @@ body {
 }
 ul,li { list-style: none; }
 a { color: #666666; cursor: pointer; }
+a.btn:active { transform: scale(0.92); }
 h1,h2,h3,h4,h5,h6 { line-height: 1; }
 
 @keyframes bounce {
@@ -220,11 +221,11 @@ h1,h2,h3,h4,h5,h6 { line-height: 1; }
 }
 /* //section 공통요소 style */
 
-#container section .inner .box-wrap{
+#container section .inner .box-wrap {
   overflow: hidden;
 }
 
-#container section .inner .box-wrap li{
+#container section .inner .box-wrap li {
   float: left;
   width: calc( 100% / 6 - 40px );
   padding: 0 20px;
@@ -236,10 +237,12 @@ h1,h2,h3,h4,h5,h6 { line-height: 1; }
 #container section .inner .box-wrap li .items {
   /* border: 1px solid #e3e3e3; */
   display: block;
+  height: 251px;
+  box-sizing: border-box;
   border-radius: 10px;
   padding: 40px 0 30px;
   box-shadow: 3px 3px 7px rgba(0, 0, 0, .3);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 #container section .inner .box-wrap li .items:hover {
@@ -413,7 +416,6 @@ h1,h2,h3,h4,h5,h6 { line-height: 1; }
   background-color: #ffffff;
   color: #3870ff;
 }
-
 
 /* footer */
 #footer {
